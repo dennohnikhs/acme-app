@@ -12,7 +12,7 @@ import {
 import { formatCurrency } from './utils';
 
 export async function fetchRevenue() {
-  // Add noStore() here to prevent the response from being cached.
+  // Add noStore() here to prevent the response from being cached.(fetches the data from the remote server on every request without looking in the cache)
   noStore();
   // This is equivalent to in fetch(..., {cache: 'no-store'}).
 
